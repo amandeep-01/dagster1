@@ -89,5 +89,6 @@ from dagster import asset # import the `dagster` library
 def topstory_ids():
     newstories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
     top_new_story_ids = requests.get(newstories_url).json()[:100]
+    print(top_new_story_ids )
     return top_new_story_ids
 
